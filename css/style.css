@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif' ;
+}
+
+:root{
+    --bs-main-color: #98CBA3;
+    /* --bs-primary-color:#A499C6; */
+    --bs-back-color: #98CBA33B;
+    --bs-dark-color: #000000;
+    --bs-light-color: #A499C6;
+    --bs-base-color:white;
+}
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.icon-section a{
+    box-sizing: border-box;
+    text-decoration: none; 
+    background-color: var(--bs-light-color);
+    /* text-transform: uppercase; */
+    color: #fff; 
+    justify-content: space-between;
+     justify-items: center; 
+    border-radius: 50%;
+    text-align:center;
+    /* text-justify: auto; */
+    line-height: 2rem; /* Vertically center the icon */
+    font-size: 1rem; /* Size of the icon */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 2rem;
+    height:2rem;
+}
+h1,h2,h3,h4,h5{
+    color:var(--bs-light-color);
+    
+   }
+   
+h4{
+       font-size: 1.2rem;
+   }
+h1{
+       font-size: 2.4rem;
+    
+   }
+h2{
+       line-height: 3rem;
+       font-weight:600;
+       font-size:3.4rem;
+   }
+
+hr{
+    color: gray;
+}
+.text-grey{
+    color:gray;
+}
+ 
+.common-text {
+    text-align: center; 
+    /* color: white; Ensure the text is readable over the background */
+ }
+
+ .common-heading{
+    color:var(--bs-light-color);
+ } 
+ .common-para{
+    justify-content: center;
+ }
+
+
+.button-section .btn{
+    border-radius: 2rem;
+    background-color:var(--bs-light-color) ;
+    border-color: var(--bs-light-color) ;
+    padding-left:1rem;
+    padding-right: 1rem;
+ }
+ /* ----------------------------nav-bar--------------------------------- */
+ .nav-item .text{
+    color:var(--bs-light-color);
+ }
+
+/* ------------------------------Hero-Section---------------------------------- */
+.Hero-section {
+    background-image: url('../images/Green.png');
+    background-size: cover; /* Option 1: cover */
+    background-size: contain;  /*Option 2: contain  */
+    background-size: 100%; /* Option 3: 50% of the container */
+    background-size: 100rem 30rem; /* Option 4: specific width and height */
+    background-position: top 50%; /* Adjust the vertical position as needed */
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    width: 100%;
+}
+
+.Hero-section .paste-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensures the paste container is in front */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+     height:6rem;
+     pointer-events: none;
+    border-radius: 0.8rem;
+    border: .1rem solid rgb(192, 192, 192); /* Adds a black border */
+    background-color: rgba(255, 255, 255, 0.8); 
+    transition: visibility 0.3s, opacity 0.3s ease;
+    padding: 1rem; /* Adjust padding as needed */
+    margin: auto;
+    opacity: 0.5;
+} 
+
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+ .Hero-section .type-container{
+    position:relative;
+    /* height:65vh;*/ 
+    width:60%;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 1.2rem;
+    border: .1rem solid rgb(192, 192, 192); /* Adds a black border */
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0rem 0.3rem 1.1rem rgba(118, 85, 255,.3);
+    margin:auto;
+    background-color:var(--bs-base-color);
+ }
+ .Hero-section .text-here{
+    width:46rem;
+    resize: none; /* Disables the resize icon */
+    /* width: 100%; Optional: Ensures the textarea takes the full width */
+    height: 100%; /* Optional: Ensures the textarea takes the full height */
+    border: none; /* Removes the border */
+    outline: none; /* Removes the outline */
+    box-shadow: none; /* Removes any box-shadow */
+    padding: 1rem;
+
+ }
+ /* .type-container:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+.focused {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+} */
+ .bold-text {
+    font-weight: bold;
+}
+ .no-border {
+    border: none;
+    box-shadow: none; /* Optional: Remove any shadow as well */
+    outline: none; /* Optional: Remove outline on focus */
+  }
+ .Hero-section .button-section{
+    justify-content: center;
+    align-items: center;
+ }
+ .col-12 button{
+    border-radius: 2rem;
+    background-color:var(--bs-light-color) ;
+    border-color: var(--bs-light-color) ;
+    padding-left:1rem;
+    padding-right: 1rem;
+ }
+ .Hero-section .normal{
+    
+    border-radius: 2rem;
+    background-color:white ;
+    border-color: var(--bs-light-color) ;
+    padding-left:1rem;
+    padding-right: 1rem;
+ }
+ .Hero-section .normal i{
+ color:var(--bs-light-color);}
+
+
+/* -----------------------------------Italic Text------------------------------- */
+
+.italic-section .img-section{
+    width:100%;
+    height:50vh;
+}
+.italic-section .img-section img{
+    height:auto;
+}
+.italic-section .container{
+    align-items: center;
+    justify-content: center;
+    width:80%;
+}
+.italic-section.button-section {
+    align-items: start;
+    justify-content: left;
+}
+.italic-section h1{
+    color:var(--bs-light-color);
+}
+.italic-section h3{
+    color:var(--bs-light-color);
+}
+/* -----------------------------------Footer-Section--------------------------------- */
+.mail-section i{
+    color:var(--bs-light-color);
+}
+.footer-section{
+    background-color: rgba(152, 203, 163, 0.23);
+    
+}
+.footer-section h2{
+    color: var(--bs-light-color);
+}
+
+.footer-section .icon-section{
+    /* justify-content: space-between; */
+    width:20rem;
+    align-items: center;
+    
+}
+.footer-section .col-3{
+    width:80%;
+}
+.footer-section .btn{
+     background-color:var(--bs-light-color);
+     border-color: var(--bs-light-color);
+}
+/* .copy-section p{
+    justify-content: center;
+    align-items: center;
+} */
+
+/* ---------------------------------About-us-Section--------------------------- */
+.About-us-section{
+    /* justify-content: center;
+    align-items: center; */
+    background-color: rgba(152, 203, 163, 0.23);
+}
+.About-us-section h1{
+    color:var(--bs-light-color);
+}
+.About-us-section .start-button-section .btn{
+    border-radius: 2rem;
+    background-color: rgba(152, 203, 163, 0.1);
+    border-color: var(--bs-light-color) ;
+    border-width: 0.1rem;
+    color:var(--bs-light-color);
+    padding-left:1rem;
+    font-weight: 550;
+    padding-right: 1rem;
+ }
+ /* --------------------------------Italic-Team-section---------------------------- */
+ .Italic-Team-section .card{
+    border-color: #fff;
+    box-shadow: 0rem 0.5rem 0.7rem rgba(118, 85, 255,.3);
+ }
+ .Italic-Team-section .container{
+    max-width: 80%;
+ }
+ /* --------------------------------------Contact Section----------------------------- */
+ .contact-section .container{
+    /* height:75vh; */
+    width:60%;
+    /* align-items: center; */
+    /* justify-content: center; */
+    border-radius: 1.2rem;
+    border-color: black;
+    box-shadow: 0rem 0.5rem 1.2rem rgba(118, 85, 255,.3);
+    margin:auto;
+    background-color:var(--bs-base-color); 
+    /* justify-content: center;*/
+ } 
+ .contact-section .form{
+    width:90%;
+    padding-left: 7rem;
+ }
+ .contact-section .btn{
+    border-radius: 2rem;
+    background-color:var(--bs-light-color) ;
+    border-color: var(--bs-light-color) ;
+    padding-left:12rem;
+    padding-right: 12rem;
+ }
+ .contact-section .form-control {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+  }
+.contact-section.form-control:focus {
+    border-bottom-color: #007bff;
+    box-shadow: none;
+}
+.contact-section .form-control::placeholder {
+    color: #ababab; /* Gray color for placeholder text */
+  }
